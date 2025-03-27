@@ -1,0 +1,148 @@
+/* Home.css */
+
+/* ===== Base Styles ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-dark: #1a365d;
+  --primary-medium: #4299e1;
+  --primary-light: #ebf8ff;
+  --accent: #2dc36c;
+  --text-dark: #2d3748;
+  --text-medium: #4a5568;
+  --text-light: #718096;
+  --border-color: #e2e8f0;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-dark);
+  line-height: 1.6;
+  background-color: #f8fafc;
+}
+
+/* Home.css */
+.portfolio-header {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    padding: 4rem 2rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .portfolio-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e40af;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgb(61, 176, 103);
+    box-shadow: 0 5px 15px rgba(2, 37, 234, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .name-container {
+    text-align: left;
+  }
+  
+  .main-name {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 0;
+    color: #1e293b;
+  }
+  
+  .surname {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0.5rem 0 0 0;
+    color: #64748b;
+    font-style: italic;
+  }
+  
+  .title-divider {
+    margin: 1.5rem 0;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #e2e8f0;
+    width: 100%;
+  }
+  
+  .professional-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+    color: #5f7088;
+    padding-top: 15px;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #475569;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .portfolio-header {
+      padding: 3rem 1.5rem;
+    }
+  
+    .profile-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .name-container {
+      text-align: center;
+    }
+  
+    .portfolio-title {
+      font-size: 2rem;
+    }
+  
+    .main-name {
+      font-size: 1.8rem;
+    }
+  
+    .surname {
+      font-size: 1.3rem;
+    }
+  
+    .professional-title {
+      font-size: 1.1rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  }

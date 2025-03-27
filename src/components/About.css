@@ -1,0 +1,162 @@
+/* About.css */
+.about-me-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+  font-family: 'Poppins', sans-serif;
+  color: #2d3748;
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+  color: white;
+  padding: 5rem 2rem;
+  border-radius: 0 0 30px 30px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+.about-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+/* Main Content */
+.about-content {
+  padding-top: 1rem;
+}
+
+/* Section Styling */
+.about-section {
+  margin-bottom: 3rem;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #1e40af;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #e2e8f0;
+}
+
+.section-content {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.section-content p {
+  margin-bottom: 1.5rem;
+}
+
+/* Philosophy Grid */
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.philosophy-card {
+  background: #f8fafc;
+  padding: 1.8rem;
+  border-radius: 10px;
+  border-left: 4px solid #1e40af;
+  transition: transform 0.3s ease;
+}
+
+.philosophy-card:hover {
+  transform: translateY(-5px);
+}
+
+.philosophy-card h3 {
+  color: #1e293b;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+/* Interests Section */
+.interests-content {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.interest-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.interest-icons span {
+  background: #f1f5f9;
+  padding: 0.8rem 1.2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-me-container {
+    padding: 0 1.5rem 3rem;
+  }
+  
+  .about-hero {
+    padding: 4rem 1.5rem;
+  }
+  
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .about-section {
+    padding: 1.8rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+  }
+}
