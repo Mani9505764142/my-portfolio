@@ -25,7 +25,7 @@ const Contact = () => {
               <a href="https://www.linkedin.com/in/sai-manikanta-vivek-suthari-467001232" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" title="Visit my LinkedIn profile">
                 <i className="fab fa-linkedin"></i>
               </a>
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" title="Visit my GitHub profile">
+              <a href="https://github.com/Mani9505764142" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" title="Visit my GitHub profile">
                 <i className="fab fa-github"></i>
               </a>
               <a href="https://twitter.com/your-twitter-handle" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile" title="Visit my Twitter profile">
