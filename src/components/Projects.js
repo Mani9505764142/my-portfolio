@@ -31,8 +31,8 @@ const Projects = () => {
     {
       title: 'Shopfinity E-commerce Project',
       description:
-        'Built a fully functional e-commerce website with product listings, shopping cart, and user authentication. Implemented the frontend using React and Tailwind CSS and the backend using Express.js and MongoDB. Integrated secure authentication and authorization, and handled dynamic product display.',
-      technologies: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB'],
+        'Built a fully functional e-commerce website with product listings, shopping cart, user authentication, and payment processing. Implemented the frontend using React and Tailwind CSS, and the backend using Express.js and MongoDB. Integrated secure authentication and authorization, dynamic product display, and a seamless checkout flow with Razorpay and Stripe payment gateways for handling real-time transactions securely.'
+      technologies: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'Razorpay', 'Stripe'],
       link: 'https://shopfinity-frontend.vercel.app/',
     },
   ];
