@@ -4,7 +4,7 @@ const projects = [
     description:
       'Designed and developed a responsive portfolio website to showcase my skills, projects, and contact information. The website features a clean, modern design with smooth navigation and is built using modern web technologies.',
     technologies: ['React', 'HTML', 'CSS', 'JavaScript', 'AWS (S3, CloudFront)'],
-    link: 'https://your-portfolio-url.com',
+    link: 'https://your-portfolio-url.com', 
   },
   {
     title: 'Face Recognition',
