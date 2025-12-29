@@ -9,17 +9,16 @@ const Header = () => {
       <div className="portfolio-header">
         <div className="header-content">
 
-          {/* SEO H1 for Google */}
+          {/* 🔥 Primary SEO H1 */}
           <h1 className="hidden-seo-title">
-            MERN Stack Freelancer in Hyderabad | Full Stack Developer | Hire Sai Manikanta Vivek |
-            Suthari Sai Manikanta Vivek | AWS Integrations Expert |
-            suthari-saimanikantavivek.vercel.app
+            Freelance React Developer in India | MERN Stack Freelancer in Hyderabad |
+            Hire Full Stack Developer | Sai Manikanta Vivek Suthari | AWS Integrations Specialist
           </h1>
 
           <div className="profile-section">
             <img
               src={profileImage}
-              alt="Sai Manikanta Vivek - MERN Stack Developer"
+              alt="Sai Manikanta Vivek - Freelance MERN Stack Developer in India"
               className="profile-image"
             />
 
@@ -27,19 +26,18 @@ const Header = () => {
               Sai Manikanta Vivek Suthari
             </h2>
 
-            <h1 className="main-headline">
-              Full Stack & AWS Cloud Engineer (MERN + Integrations)
-            </h1>
+            <h2 className="main-headline">
+              Freelance React & MERN Developer (AWS Cloud Integrations)
+            </h2>
           </div>
 
           <h3 className="sub-headline">
-            I build full-stack web applications with React, Node.js, MongoDB, and secure AWS
-            integrations (Lambda, API Gateway, S3, DynamoDB). I also support Angular, Django,
-            Spring Boot, and SEO when projects demand it.
+            I build scalable web applications using React, Node.js, MongoDB, and AWS (Lambda, API Gateway, S3, DynamoDB).
+            Remote-friendly freelancer helping startups, founders, and tech teams ship faster.
           </h3>
 
           <div className="tech-stack">
-            React | Node.js | MongoDB | AWS (Lambda, S3, API Gateway, DynamoDB) | Docker
+            React | Node.js | MongoDB | AWS (Lambda, S3, API Gateway, DynamoDB) | Docker | CI/CD
           </div>
 
           <div className="cta-buttons">
@@ -52,17 +50,32 @@ const Header = () => {
 
       {/* ================= SERVICES SECTION ================= */}
       <section id="services" className="services">
-        <h2 className="section-title">Services I Offer</h2>
+        <h2 className="section-title">Freelance Services</h2>
 
         <ul className="services-list">
-          <li>🚀 MERN Web Applications (React, Node.js, Express, MongoDB)</li>
-          <li>☁️ AWS Deployments (EC2, S3, RDS, VPC, CloudFront, Route53)</li>
-          <li>⚙️ API Development (REST APIs with Lambda / Express.js)</li>
-          <li>🔐 Secure Auth (JWT, OAuth, IAM, Cognito, RBAC)</li>
-          <li>📦 CI/CD Automations (GitHub Actions, Docker, CodePipeline)</li>
-          <li>🔧 Migrations from Traditional Hosting → AWS</li>
+          <li>🚀 Full-stack MERN Web Applications (React, Node.js, Express, MongoDB)</li>
+          <li>☁️ AWS Cloud Infrastructure Setup (EC2, CloudFront, Route53, VPC, IAM)</li>
+          <li>⚙️ Production-ready API Development (AWS Lambda / Express.js)</li>
+          <li>🔐 Secure Authentication (JWT, OAuth, Cognito, IAM, RBAC)</li>
+          <li>📦 CI/CD Setup & Automation (GitHub Actions, CodePipeline, Docker)</li>
+          <li>🔧 Migration to AWS from Shared / On-Prem Hosting</li>
         </ul>
+
+        <p className="seo-cta-text">
+          Available for freelance, remote, and full-time React developer roles in India & Worldwide.
+        </p>
       </section>
+
+     {/* ================= SEO ROUTE LINKS ================= */}
+<section className="seo-links">
+  <h3>📌 Popular Searches</h3>
+  <div className="seo-links-list">
+    <a href="/freelance-react-developer-india">Freelance React Developer in India</a>
+    <a href="/mern-stack-freelancer-india">MERN Stack Freelancer in India</a>
+    <a href="/react-developer-hyderabad">React Developer in Hyderabad</a>
+    <a href="/hire-react-developer-india">Hire React Developer in India</a>
+  </div>
+</section>
     </>
   );
 };

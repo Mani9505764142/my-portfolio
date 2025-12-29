@@ -237,3 +237,40 @@ body {
 .services-list li:last-child {
   border-bottom: none;
 }
+/* ================= SEO Bottom Links ================= */
+.seo-links {
+  padding: 2rem 1rem;
+  text-align: center;
+  background: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+.seo-links h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.seo-links-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.seo-links-list a {
+  background: #f3f6ff;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #0047cc;
+  font-weight: 500;
+  border: 1px solid #ccd9ff;
+  transition: 0.2s ease;
+}
+
+.seo-links-list a:hover {
+  background: #0047cc;
+  color: white;
+  border-color: #0047cc;
+}

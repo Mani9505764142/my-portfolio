@@ -1,0 +1,40 @@
+.seo-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 3rem 1rem;
+  line-height: 1.7;
+  background: #fff;
+  font-size: 1.08rem;
+}
+
+.seo-page h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.seo-page h2 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: #0056d6;
+}
+
+.whatsapp-hire, .email-hire {
+  display: block;
+  margin: 1rem auto;
+  padding: 10px 15px;
+  width: 90%;
+  max-width: 350px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.whatsapp-hire {
+  background: #25D366;
+  color: white;
+}
+.email-hire {
+  background: #007bff;
+  color: white;
+}
