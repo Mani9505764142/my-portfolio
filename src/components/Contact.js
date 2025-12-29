@@ -42,7 +42,7 @@ const Contact = () => {
           <div className="email-cta">
             <a
               className="email-button"
-              href="mailto:manikanta.suthari202@gmail.com"
+              href="mailto:manikanta.suthari2002@gmail.com"
             >
               📩 Send Email
             </a>
