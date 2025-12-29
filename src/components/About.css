@@ -9,11 +9,8 @@
 
 /* Hero Section */
 .about-hero {
-  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
-  color: white;
-  padding: 5rem 2rem;
-  border-radius: 0 0 30px 30px;
-  margin-bottom: 3rem;
+  background: #ffffff;
+  padding: 3rem 1rem 2rem;
   text-align: center;
 }
 
@@ -36,17 +33,17 @@
 }
 
 .about-hero h1 {
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
+  font-size: 2.4rem;
   font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
 }
 
+
 .hero-subtitle {
-  font-size: 1.3rem;
-  opacity: 0.9;
-  max-width: 600px;
-  margin: 0 auto;
-  font-weight: 300;
+  font-size: 1.1rem;
+  color: #334155;
+  font-weight: 500;
 }
 
 /* Main Content */

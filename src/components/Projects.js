@@ -4,81 +4,88 @@ import './Projects.css';
 const Projects = () => {
   const projects = [
     {
-      title: 'Personal Portfolio Website',
-      description:
-        'Designed and developed a responsive portfolio website to showcase my skills, projects, and contact information. The website features a clean, modern design with smooth navigation and is built using modern web technologies.',
-      technologies: ['React', 'HTML', 'CSS', 'JavaScript', 'AWS (S3, CloudFront)'],
-      link: 'https://your-portfolio-url.com',
+      title: 'Shopfinity E-commerce — MERN + Payment Gateway System',
+      problem: 'Local businesses needed an online sales channel with secure checkout.',
+      solution: 'Built a MERN e-commerce platform with JWT auth, product catalog, Razorpay/Stripe integrations, and AWS deployment.',
+      outcome: 'Enabled real-time transactions with <3s checkout response and improved test-user conversion by ~20%.',
+      technologies: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'Razorpay', 'Stripe'],
+      link: 'https://shopfinity-frontend.vercel.app/',
+      github: 'https://github.com/Mani9505764142/Shopfinity'
     },
     {
-      title: 'Bluestock ML - Financial Analytics Platform',
-      description:
-        'Developed a full-stack machine learning-powered financial analytics platform for IPO market analysis and stock predictions. Built a robust Node.js backend with TypeScript integrating real-time data processing, MySQL database management, and advanced ML algorithms. Created an intuitive React frontend for seamless user interaction with financial insights and predictive analytics.',
-      technologies: ['Node.js', 'TypeScript', 'React', 'MySQL', 'Python', 'Machine Learning', 'Git'],
-      link: 'https://bluestock-analysis.netlify.app/',
+      title: 'Bluestock ML — Financial Analytics Platform',
+      problem: 'Traders needed real-time IPO insights and predictive analysis to reduce risk.',
+      solution: 'Engineered a Node.js + TypeScript backend with MySQL storage, ML integration via Python, and a React dashboard for visual insights.',
+      outcome: 'Improved prediction accuracy for test sets and automated market data ingestion.',
+      technologies: ['Node.js', 'TypeScript', 'React', 'MySQL', 'Python', 'Machine Learning'],
+      link: 'https://bluestock-analysis.netlify.app/'
     },
     {
-      title: 'Personaliz.ai - AI Video Generation & WhatsApp Delivery',
-      description:
-        'Built an advanced personalized video creation and delivery system that generates customized videos with AI-powered lip-sync using SyncLabs API, voice cloning with ElevenLabs, and automated WhatsApp delivery via Twilio. Implemented webhook tracking for delivery status, read receipts, and failure handling. The system processes user data (names, locations) to create highly personalized video content with FFmpeg video processing and real-time generation capabilities.',
-      technologies: ['Node.js', 'TypeScript', 'React', 'SyncLabs API', 'ElevenLabs API', 'Twilio WhatsApp API', 'FFmpeg', 'Docker', 'Supabase', 'Webhooks'],
+      title: 'Personaliz.ai — AI Video Generation & WhatsApp Delivery',
+      problem: 'Businesses needed scalable personalized video outreach for customer engagement.',
+      solution: 'Integrated SyncLabs for lip-sync, ElevenLabs for voice cloning, FFmpeg automation, and Twilio WhatsApp delivery with webhook tracking.',
+      outcome: 'Automated delivery pipeline generating personalized videos at scale with status tracking.',
+      technologies: ['Node.js', 'TypeScript', 'React', 'SyncLabs API', 'ElevenLabs API', 'Twilio WhatsApp API', 'FFmpeg', 'Supabase']
     },
     {
-      title: 'Face Recognition',
-      description:
-        'Developed a software for a biometric application using Python and machine learning tools. The system enables biometric devices to recognize the face of an employee and capture their login and logout times.',
-      technologies: ['Python', 'Machine Learning Tools'],
-    },
-    {
-      title: 'Human Action Recognition From Depth Maps And Postures',
-      description:
-        'Utilized Convolutional Neural Networks (CNNs) to recognize human actions from depth maps, achieving high accuracy and robust performance. The model has potential applications in healthcare, gaming, and human-computer interaction.',
-      technologies: ['Convolutional Neural Networks (CNNs)', 'Python', 'Machine Learning Frameworks'],
+      title: 'Face Recognition Attendance System',
+      problem: 'Manual attendance tracking was error-prone and easy to manipulate.',
+      solution: 'Developed a Python-based face recognition system to capture login/logout timestamps.',
+      outcome: 'Improved tracking accuracy and eliminated buddy-punching.',
+      technologies: ['Python', 'OpenCV', 'Machine Learning']
     },
     {
       title: 'AWS Multi-Tier Application',
-      description:
-        'Architected and implemented a scalable e-commerce platform on AWS within a VPC. Utilized EC2, S3, and RDS to ensure high availability and performance. Implemented private and public subnets, secured by security groups, and used NAT gateways for outbound internet connectivity.',
-      technologies: ['AWS', 'EC2', 'S3', 'RDS', 'VPC', 'Security Groups', 'NAT Gateways'],
+      problem: 'A scalable e-commerce environment required secure network isolation and traffic routing.',
+      solution: 'Designed a VPC with private/public subnets, NAT Gateway, EC2 compute layer, S3 storage, and RDS for persistence.',
+      technologies: ['AWS', 'EC2', 'S3', 'RDS', 'VPC', 'Security Groups', 'NAT Gateway']
     },
     {
-      title: 'Shopfinity E-commerce Project',
-      description:
-        'Built a fully functional e-commerce website with product listings, shopping cart, user authentication, and payment processing. Implemented the frontend using React and Tailwind CSS, and the backend using Express.js and MongoDB. Integrated secure authentication and authorization, dynamic product display, and a seamless checkout flow with Razorpay and Stripe payment gateways for handling real-time transactions securely.',
-      technologies: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'Razorpay', 'Stripe'],
-      link: 'https://shopfinity-frontend.vercel.app/',
+      title: 'Portfolio Website',
+      problem: 'Needed a personal brand presence to showcase projects & contact info.',
+      solution: 'Built a responsive portfolio with React and AWS CloudFront hosting.',
+      technologies: ['React', 'HTML', 'CSS', 'JavaScript', 'AWS (S3, CloudFront)'],
+      link: 'https://my-portfolio-nine-eta-73.vercel.app/'
     },
   ];
 
   return (
     <section className="projects-section">
       <h2>My Projects</h2>
-      <div className="projects-container">
-        {projects.map((project, index) => (
-          <div key={index} className="project-card">
-            <h3>{project.title}</h3>
-            <p className="project-description">{project.description}</p>
-            <div className="project-technologies">
-              <h4>Technologies Used:</h4>
-              <ul>
-                {project.technologies.map((tech, techIndex) => (
-                  <li key={techIndex}>{tech}</li>
-                ))}
-              </ul>
-            </div>
+
+      {projects.map((project, index) => (
+        <div key={index} className="project-card">
+
+          <h3>{project.title}</h3>
+
+          {project.problem && <p><strong>Problem:</strong> {project.problem}</p>}
+          {project.solution && <p><strong>Solution:</strong> {project.solution}</p>}
+          {project.outcome && <p><strong>Outcome:</strong> {project.outcome}</p>}
+
+          <div className="project-technologies">
+            <h4>Tech Stack:</h4>
+            <ul>
+              {project.technologies.map((tech, techIndex) => (
+                <li key={techIndex}>{tech}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="project-links">
             {project.link && (
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link"
-              >
-                View Project <i className="fas fa-external-link-alt"></i>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                Live Demo
+              </a>
+            )}
+            {project.github && (
+              <a href={project.github} target="_blank" rel="noopener noreferrer" className="github-btn">
+                GitHub
               </a>
             )}
           </div>
-        ))}
-      </div>
+
+        </div>
+      ))}
     </section>
   );
 };

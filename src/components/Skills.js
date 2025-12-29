@@ -4,54 +4,59 @@ import './Skills.css';
 const Skills = () => {
   const skillCategories = [
     {
-      category: 'Languages',
+      category: 'Programming Languages',
       skills: [
+        { name: 'JavaScript (ES6+)', icon: 'fab fa-js' },
         { name: 'Python', icon: 'fab fa-python' },
         { name: 'Java', icon: 'fab fa-java' },
-        { name: 'JavaScript', icon: 'fab fa-js' },
       ],
     },
     {
-      category: 'Cloud & AWS Services',
+      category: 'Frontend Development',
       skills: [
-        { name: 'AWS', icon: 'fab fa-aws' },
-        { name: 'IAM Roles', icon: 'fas fa-user-shield' },
-        { name: 'EC2', icon: 'fas fa-server' },
-        { name: 'S3', icon: 'fas fa-database' },
-        { name: 'Auto Scaling', icon: 'fas fa-expand-arrows-alt' },
-        { name: 'RDS', icon: 'fas fa-database' },
-        { name: 'VPC', icon: 'fas fa-network-wired' },
-        { name: 'Lambda', icon: 'fas fa-code' },
-        { name: 'CI/CD', icon: 'fas fa-sync-alt' },
-        { name: 'CloudWatch', icon: 'fas fa-eye' },
-        { name: 'Elastic Beanstalk', icon: 'fas fa-leaf' },
-      ],
-    },
-    {
-      category: 'Web Technologies',
-      skills: [
-        { name: 'HTML', icon: 'fab fa-html5' },
-        { name: 'CSS', icon: 'fab fa-css3-alt' },
-        { name: 'ReactJS', icon: 'fab fa-react' },
-       
+        { name: 'React.js', icon: 'fab fa-react' },
+        { name: 'HTML5', icon: 'fab fa-html5' },
+        { name: 'CSS3', icon: 'fab fa-css3-alt' },
         { name: 'Bootstrap', icon: 'fab fa-bootstrap' },
       ],
     },
     {
-      category: 'Frameworks & Libraries',
+      category: 'Backend & APIs',
       skills: [
-        { name: 'MERN Stack', icon: 'fas fa-layer-group' },
-    
-        { name: 'Machine Learning Tools', icon: 'fas fa-brain' },
-        
+        { name: 'Node.js', icon: 'fab fa-node' },
+        { name: 'Express.js', icon: 'fas fa-code' },
+        { name: 'REST API Design', icon: 'fas fa-network-wired' },
+        { name: 'JSON & Postman (Testing)', icon: 'fas fa-paper-plane' },
       ],
     },
     {
-      category: 'Tools',
+      category: 'Databases',
       skills: [
-        { name: 'Git', icon: 'fab fa-git-alt' },
-        { name: 'GitHub', icon: 'fab fa-github' },
-        { name: 'Figma', icon: 'fab fa-figma' },
+        { name: 'MongoDB', icon: 'fas fa-leaf' },
+        { name: 'MySQL', icon: 'fas fa-database' },
+        { name: 'PostgreSQL', icon: 'fas fa-database' }, // added
+      ],
+    },
+    {
+      category: 'AWS & Cloud Integrations',
+      skills: [
+        { name: 'EC2 (Server Deployment)', icon: 'fas fa-server' }, // added
+        { name: 'S3 (Static Hosting & Storage)', icon: 'fas fa-box' },
+        { name: 'API Gateway', icon: 'fas fa-plug' },
+        { name: 'IAM Roles & Policies', icon: 'fas fa-user-shield' }, // added
+        { name: 'Lambda (Serverless Functions)', icon: 'fas fa-terminal' },
+        { name: 'DynamoDB', icon: 'fas fa-table' },
+        { name: 'SES (Email Service)', icon: 'fas fa-envelope' },
+        { name: 'CloudWatch (Monitoring)', icon: 'fas fa-chart-line' },
+      ],
+    },
+    {
+      category: 'Tools & Other Skills',
+      skills: [
+        { name: 'Git & GitHub', icon: 'fab fa-git-alt' },
+        { name: 'Figma (UI/UX Prototyping)', icon: 'fab fa-figma' },
+        { name: 'VS Code', icon: 'fas fa-code-branch' },
+        { name: 'Linux Basics', icon: 'fas fa-terminal' },
       ],
     },
   ];

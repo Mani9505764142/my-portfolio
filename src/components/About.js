@@ -1,89 +1,87 @@
 import React from "react";
-import profileImage from "../assets/My passportsize photo.jpg";
+import profileImage from "../assets/profile.jpg";
 import "./About.css";
 
 const About = () => {
   return (
     <div className="about-me-container">
-      {/* Hero Section */}
+
+      {/* Hero */}
       <section className="about-hero">
-        <div className="hero-content">
-          <img 
-            src={profileImage} 
-            alt="Sai Manikanta Vivek" 
-            className="hero-profile-image"
-          />
-          <div className="hero-text">
-            <h1>My Journey</h1>
-            <p className="hero-subtitle">
-            "Exploring Tech: My Evolution into Cloud Engineering and Web Development"
+        <img
+          src={profileImage}
+          alt="Sai Manikanta Vivek"
+          className="hero-profile-image"
+        />
+        <h1>About Me</h1>
+        <p className="hero-subtitle">
+          Full Stack Developer (MERN) • AWS Integrations • Cloud-Backed Apps
+        </p>
+      </section>
+
+      {/* Who I Am */}
+      <section className="about-section">
+        <h2 className="section-title">Who I Am</h2>
+        <p>
+          I’m Sai Manikanta Vivek Suthari — a Full Stack Developer who builds
+          **scalable web applications** with **React, Node.js, and AWS
+          integrations**. I work on both frontend and backend, designing
+          UI/UX-driven interfaces and connecting them with secure, cloud-backed
+          APIs.
+        </p>
+        <p>
+          My strength is bridging development and cloud: deploying apps on AWS,
+          integrating services like **EC2, Lambda, S3, SES, API Gateway, IAM**,
+          and designing workflows that can scale without firefighting.
+        </p>
+      </section>
+
+      {/* What I Do */}
+      <section className="about-section">
+        <h2 className="section-title">What I Do</h2>
+
+        <div className="philosophy-grid">
+          <div className="philosophy-card">
+            <h3>Build & Ship</h3>
+            <p>
+              I create applications end-to-end: UI → API → Database → AWS
+              deployment. No theory-only projects — everything runs live.
+            </p>
+          </div>
+
+          <div className="philosophy-card">
+            <h3>Problem-Solver</h3>
+            <p>
+              I don’t guess. I test, debug, measure, and fix. If a feature fails
+              in production, I track why — not just patch it.
+            </p>
+          </div>
+
+          <div className="philosophy-card">
+            <h3>Learning Loop</h3>
+            <p>
+              Every project pushes me one level up — from build scripts to auth
+              flows, deployment, optimization, and monitoring.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Main Content */}
-      <div className="about-content">
-        {/* Personal Story Section */}
-        <section className="about-section">
-          <h2 className="section-title">Who I Am</h2>
-          <div className="section-content">
-            <p>
-            I'm Sai Manikanta Vivek Suthari, a dedicated cloud engineer and web developer based in Tiruvuru, NTR District, India. 
-            My journey in technology began when I explored programming during my B.Tech at Sree Vahini Institute of Science and Technology, igniting a deep passion for leveraging technology to solve real-world challenges.
-            </p>
-            <p>
-            What I love most about cloud engineering and web development is their combined potential to build scalable, efficient solutions that empower businesses and enhance user experiences worldwide. I approach every project with a focus on innovation, a commitment to quality, and a collaborative mindset to deliver impactful, reliable systems that seamlessly integrate cloud infrastructure with dynamic, user-friendly web applications.
-            </p>
-          </div>
-        </section>
+      {/* Beyond Code */}
+      <section className="about-section">
+        <h2 className="section-title">Outside of Code</h2>
+        <p>
+          When I’m not building, I refuel through fitness, reading, and travel —
+          habits that keep my mind sharp and help me return to problems with a
+          fresh perspective.
+        </p>
+        <div className="interest-icons">
+          <span>🏋️ Fitness</span>
+          <span>📚 Reading</span>
+          <span>✈️ Travel</span>
+        </div>
+      </section>
 
-        {/* Career Philosophy */}
-        <section className="about-section">
-          <h2 className="section-title">My Approach</h2>
-          <div className="philosophy-grid">
-            <div className="philosophy-card">
-              <h3>Problem Solving</h3>
-              <p>
-                I thrive on breaking down complex challenges into elegant solutions, 
-                always considering both technical and business perspectives.
-              </p>
-            </div>
-            <div className="philosophy-card">
-              <h3>Continuous Learning</h3>
-              <p>
-                In our rapidly evolving field, I dedicate time each week to explore 
-                new technologies and deepen my existing knowledge.
-              </p>
-            </div>
-            <div className="philosophy-card">
-              <h3>Collaboration</h3>
-              <p>
-                Some of my best work comes from teamwork. I value diverse perspectives 
-                and believe they lead to innovative solutions.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Personal Interests */}
-        <section className="about-section">
-          <h2 className="section-title">Beyond Coding</h2>
-          <div className="interests-content">
-            <p>
-              When I'm not architecting cloud solutions, you can find me [your hobbies/interests]. 
-              I believe that [how your outside interests complement your work].
-            </p>
-            <div className="interest-icons">
-              {/* Add icons or images representing your interests */}
-              <span>🏋️ Fitness</span>
-              <span>📚 Reading</span>
-              <span>✈️ Travel</span>
-              {/* Add more as needed */}
-            </div>
-          </div>
-        </section>
-      </div>
     </div>
   );
 };

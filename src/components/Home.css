@@ -146,3 +146,43 @@ body {
       font-size: 1rem;
     }
   }
+  .cta-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid #007bff;
+}
+
+.view-projects {
+  background: #007bff;
+  color: white;
+}
+
+.contact-me {
+  color: #007bff;
+  background: transparent;
+}
+.main-headline {
+  margin-top: 1rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.profile-section {
+  margin-top: 1.2rem;
+}
+
+.sub-headline {
+  margin: 1rem 0 0.3rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
