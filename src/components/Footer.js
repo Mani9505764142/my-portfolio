@@ -1,40 +1,33 @@
-import React from 'react';
-import './Footer.css';
+import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-about">
-          <h3>Sai Manikanta Vivek Suthari</h3>
-          <p>Cloud Engineer & Web Developer</p>
+      <div className="footer-top">
+        <div className="footer-name">
+          <h2>Sai Manikanta Vivek Suthari</h2>
+          <p className="footer-role">Full Stack Developer (MERN + AWS Integrations)</p>
         </div>
+
         <div className="footer-contact">
-          <h4>Contact Me</h4>
-          <p>
-            <i className="fas fa-envelope"></i> manikanta.suthari2002@gmail.com
-          </p>
-          <p>
-            <i className="fas fa-phone"></i> +91 9505764142
-          </p>
+          <h3>Contact</h3>
+          <p><i className="fas fa-envelope"></i> manikanta.suthari2002@gmail.com</p>
+          <p><i className="fas fa-phone"></i> +91 95057 64142</p>
+          <p><i className="fas fa-map-marker-alt"></i> Hyderabad, India</p>
         </div>
+
         <div className="footer-social">
-          <h4>Connect With Me</h4>
-          <div className="social-icons">
-            <a
-              href="https://www.linkedin.com/in/sai-manikanta-vivek-suthari-467001232"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn Profile"
-              title="Visit my LinkedIn profile"
-            >
-              <i className="fab fa-linkedin"></i>
-            </a>
+          <h3>Connect</h3>
+          <div className="footer-icons">
+            <a href="https://www.linkedin.com/in/sai-manikanta-vivek-suthari-467001232/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Mani9505764142" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
           </div>
         </div>
       </div>
+
       <div className="footer-bottom">
-        <p>&copy; 2025 Sai Manikanta Vivek Suthari. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Sai Manikanta Vivek Suthari. All Rights Reserved.</p>
       </div>
     </footer>
   );

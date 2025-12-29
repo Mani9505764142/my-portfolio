@@ -3,7 +3,8 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <section className="contact-section">
+    <section id="contact" className="contact-section">
+
       <h2>Get In Touch</h2>
 
       <div className="contact-container">
@@ -22,7 +23,7 @@ const Contact = () => {
           <div className="contact-details">
             <p>
               <i className="fas fa-envelope"></i>
-              <strong>Email:</strong> manikanta.suthari202@gmail.com
+              <strong>Email:</strong> manikanta.suthari2002@gmail.com
             </p>
             <p>
               <i className="fas fa-phone"></i>
