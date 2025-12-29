@@ -7,7 +7,7 @@ const Projects = () => {
       title: 'Shopfinity E-commerce — MERN + Payment Gateway System',
       problem: 'Local businesses needed an online sales channel with secure checkout.',
       solution: 'Built a MERN e-commerce platform with JWT auth, product catalog, Razorpay/Stripe integrations, and AWS deployment.',
-      outcome: 'Enabled real-time transactions with <3s checkout response and improved test-user conversion by ~20%.',
+      outcome: 'Enabled real-time transactions with under 3-second checkout response and optimized checkout flow performance for demo users.',
       technologies: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'Razorpay', 'Stripe'],
       link: 'https://shopfinity-frontend.vercel.app/',
       github: 'https://github.com/Mani9505764142/Shopfinity'
@@ -30,13 +30,13 @@ const Projects = () => {
     {
       title: 'Face Recognition Attendance System',
       problem: 'Manual attendance tracking was error-prone and easy to manipulate.',
-      solution: 'Developed a Python-based face recognition system to capture login/logout timestamps.',
+      solution: 'Developed a face recognition system with OpenCV and LBPH to record attendance timestamps and prevent timestamp spoofing (buddy punching).',
       outcome: 'Improved tracking accuracy and eliminated buddy-punching.',
       technologies: ['Python', 'OpenCV', 'Machine Learning']
     },
     {
       title: 'AWS Multi-Tier Application',
-      problem: 'A scalable e-commerce environment required secure network isolation and traffic routing.',
+      problem: 'Designed a production-style VPC with subnet isolation, NAT gateway routing, EC2 compute layer S3 for assets, and RDS for persistent storage. Focused on network security and scalability.',
       solution: 'Designed a VPC with private/public subnets, NAT Gateway, EC2 compute layer, S3 storage, and RDS for persistence.',
       technologies: ['AWS', 'EC2', 'S3', 'RDS', 'VPC', 'Security Groups', 'NAT Gateway']
     },
