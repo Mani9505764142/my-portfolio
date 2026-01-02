@@ -1,6 +1,8 @@
 import React from "react";
 import profileImage from "../assets/profile.jpg";
 import './Home.css';
+import { Link } from "react-router-dom";
+
 
 const Header = () => {
   return (
@@ -67,15 +69,30 @@ const Header = () => {
       </section>
 
      {/* ================= SEO ROUTE LINKS ================= */}
-<section className="seo-links">
+      {/* ================= SEO ROUTE LINKS ================= */}
+  <section className="seo-links">
   <h3>📌 Popular Searches</h3>
   <div className="seo-links-list">
-    <a href="/freelance-react-developer-india">Freelance React Developer in India</a>
-    <a href="/mern-stack-freelancer-india">MERN Stack Freelancer in India</a>
-    <a href="/react-developer-hyderabad">React Developer in Hyderabad</a>
-    <a href="/hire-react-developer-india">Hire React Developer in India</a>
+    <Link to="/freelance-react-developer-india">
+      Freelance React Developer in India
+    </Link>
+
+    {/* Keep this disabled until page exists */}
+    {/* <Link to="/mern-stack-freelancer-india">
+      MERN Stack Freelancer in India
+    </Link> */}
+
+    <Link to="/freelance-react-developer-hyderabad">
+      React Developer in Hyderabad
+    </Link>
+
+    {/* Keep this disabled until page exists */}
+    {/* <Link to="/hire-react-developer-india">
+      Hire React Developer in India
+    </Link> */}
   </div>
 </section>
+
     </>
   );
 };

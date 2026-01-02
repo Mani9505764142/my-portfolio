@@ -1,11 +1,12 @@
 import React from "react";
 import "../SeoPages.css";
-import { Helmet } from "react-helmet";
+
+
 
 const FreelanceReactIndia = () => {
   return (
     <>
-      <Helmet>
+      
         <title>Freelance React Developer in India | Hire Sai Manikanta Vivek</title>
         <meta
           name="description"
@@ -16,7 +17,7 @@ const FreelanceReactIndia = () => {
           content="freelance react developer india, hire react developer india, mern stack freelancer india, react developer hyderabad, freelance react developer hyderabad, remote react developer india, full stack developer india"
         />
         <link rel="canonical" href="https://suthari-saimanikantavivek.vercel.app/freelance-react-developer-india" />
-      </Helmet>
+      
 
       <section className="seo-page">
         <h1>Freelance React Developer in India | Hire Sai Manikanta Vivek</h1>
