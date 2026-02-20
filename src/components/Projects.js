@@ -5,9 +5,9 @@ const Projects = () => {
   const projects = [
   {
     title: 'SnapDemo — Screen Recording & Sharing Platform',
-    problem: 'Users needed a fast way to record, trim, and share screen demos with basic analytics.',
-    solution: 'Built a serverless web app using Next.js and AWS that enables in-browser screen recording, optional trimming, S3 uploads, and shareable links.',
-    outcome: 'Delivered an end-to-end recording and sharing flow with reliable uploads and DynamoDB-based view analytics.',
+    problem: 'Professionals needed a lightweight tool to record, share, and track screen demos without heavy software.',
+    solution: 'Architected a serverless application using Next.js and AWS enabling in-browser recording, optional trimming, secure S3 uploads, and DynamoDB-backed analytics.',
+    outcome: 'Delivered a reliable upload pipeline with shareable links and view tracking, demonstrating scalable serverless architecture.',
     technologies: [
       'Next.js (App Router)',
       'React',
@@ -22,44 +22,45 @@ const Projects = () => {
   },
 
   {
-    title: 'Shopfinity E-commerce — MERN + Payment Gateway System',
-    problem: 'Local businesses needed an online sales channel with secure checkout.',
-    solution: 'Built a MERN e-commerce platform with JWT auth, product catalog, Razorpay/Stripe integrations, and AWS deployment.',
-    outcome: 'Enabled real-time transactions with under 3-second checkout response and optimized checkout flow performance for demo users.',
+    title: 'Shopfinity — Scalable MERN E-commerce Platform',
+    problem: 'Local businesses required a secure and scalable online sales platform with payment integration.',
+    solution: 'Built a full-stack MERN application with JWT authentication, product catalog management, and Razorpay/Stripe payment workflows.',
+    outcome: 'Implemented secure transactional flows with optimized checkout performance and structured API architecture.',
     technologies: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'Razorpay', 'Stripe'],
     link: 'https://shopfinity-frontend.vercel.app/',
     github: 'https://github.com/Mani9505764142/Shopfinity'
   },
 
   {
-    title: 'Bluestock ML — Financial Analytics Platform',
-    problem: 'Traders needed real-time IPO insights and predictive analysis to reduce risk.',
-    solution: 'Engineered a Node.js + TypeScript backend with MySQL storage, ML integration via Python, and a React dashboard for visual insights.',
-    outcome: 'Improved prediction accuracy for test sets and automated market data ingestion.',
+    title: 'Bluestock ML — Financial Analytics & Prediction System',
+    problem: 'Retail traders lacked structured insights for IPO evaluation and market trend assessment.',
+    solution: 'Engineered a Node.js + TypeScript backend integrated with Python ML models and MySQL storage, alongside a React-based analytics dashboard.',
+    outcome: 'Automated data ingestion and predictive modeling pipeline for structured financial insights.',
     technologies: ['Node.js', 'TypeScript', 'React', 'MySQL', 'Python', 'Machine Learning'],
     link: 'https://bluestock-analysis.netlify.app/'
   },
 
   {
-    title: 'Personaliz.ai — AI Video Generation & WhatsApp Delivery',
-    problem: 'Businesses needed scalable personalized video outreach for customer engagement.',
-    solution: 'Integrated SyncLabs for lip-sync, ElevenLabs for voice cloning, FFmpeg automation, and Twilio WhatsApp delivery with webhook tracking.',
-    outcome: 'Automated delivery pipeline generating personalized videos at scale with status tracking.',
+    title: 'Personaliz.ai — AI Video Generation & WhatsApp Automation',
+    problem: 'Businesses needed scalable personalized video outreach without manual production workflows.',
+    solution: 'Integrated lip-sync, voice cloning, and FFmpeg-based automation with WhatsApp delivery and webhook tracking for end-to-end execution.',
+    outcome: 'Built an automated AI-driven content pipeline enabling scalable personalized video delivery.',
     technologies: ['Node.js', 'TypeScript', 'React', 'SyncLabs API', 'ElevenLabs API', 'Twilio WhatsApp API', 'FFmpeg', 'Supabase']
   },
 
   {
     title: 'Face Recognition Attendance System',
-    problem: 'Manual attendance tracking was error-prone and easy to manipulate.',
-    solution: 'Developed a face recognition system with OpenCV and LBPH to record attendance timestamps and prevent timestamp spoofing.',
-    outcome: 'Improved tracking accuracy and eliminated buddy-punching.',
+    problem: 'Manual attendance systems were error-prone and vulnerable to manipulation.',
+    solution: 'Developed a Python-based face recognition system using OpenCV and LBPH with timestamp validation logic.',
+    outcome: 'Improved attendance integrity and eliminated proxy attendance risks.',
     technologies: ['Python', 'OpenCV', 'Machine Learning']
   },
 
   {
-    title: 'AWS Multi-Tier Application',
-    problem: 'Designed a production-style VPC with subnet isolation, NAT gateway routing, EC2 compute layer, S3 for assets, and RDS for persistence.',
-    solution: 'Implemented a secure AWS architecture with public/private subnets, EC2 compute, S3 storage, and RDS database.',
+    title: 'AWS Multi-Tier Cloud Architecture',
+    problem: 'Designed a production-style secure cloud environment with network isolation and scalable compute.',
+    solution: 'Implemented VPC with public/private subnets, EC2 compute layer, RDS persistence, S3 storage, and secure routing via NAT Gateway.',
+    outcome: 'Demonstrated secure, scalable, and modular AWS infrastructure design principles.',
     technologies: ['AWS', 'EC2', 'S3', 'RDS', 'VPC', 'Security Groups', 'NAT Gateway']
   },
 
