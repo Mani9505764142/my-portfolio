@@ -6,16 +6,16 @@ const About = () => {
   return (
     <div className="about-me-container">
 
-      {/* Hero */}
+      {/* Hero Section */}
       <section className="about-hero">
         <img
           src={profileImage}
-          alt="Sai Manikanta Vivek"
+          alt="Sai Manikanta Vivek - AI Focused Full Stack Engineer"
           className="hero-profile-image"
         />
         <h1>About Me</h1>
         <p className="hero-subtitle">
-          Full Stack Developer (MERN) • AWS Integrations • Cloud-Backed Apps
+          AI-Focused Full Stack Engineer • MERN Stack • AWS Cloud (EC2 & Serverless)
         </p>
       </section>
 
@@ -23,63 +23,68 @@ const About = () => {
       <section className="about-section">
         <h2 className="section-title">Who I Am</h2>
         <p>
-          I’m Sai Manikanta Vivek Suthari — a Full Stack Developer who builds
-          **scalable web applications** with **React, Node.js, and AWS
-          integrations**. I work on both frontend and backend, designing
-          UI/UX-driven interfaces and connecting them with secure, cloud-backed
-          APIs.
+          I’m Sai Manikanta Vivek Suthari — an AI-focused Full Stack Engineer 
+          building scalable web and AI-powered systems using MERN Stack and AWS.
+          I design end-to-end architectures that connect clean frontend interfaces 
+          with secure backend APIs and cloud infrastructure.
         </p>
         <p>
-          My strength is bridging development and cloud: deploying apps on AWS,
-          integrating services like **EC2, Lambda, S3, SES, API Gateway, IAM**,
-          and designing workflows that can scale without firefighting.
+          My work increasingly focuses on integrating LLM-based systems,
+          Retrieval-Augmented Generation (RAG), and agentic workflows into
+          production-ready applications. I approach AI not as a demo feature,
+          but as an engineered system that must be reliable, observable,
+          and scalable.
         </p>
       </section>
 
-      {/* What I Do */}
+      {/* What I Build */}
       <section className="about-section">
-        <h2 className="section-title">What I Do</h2>
+        <h2 className="section-title">What I Build</h2>
 
         <div className="philosophy-grid">
+
           <div className="philosophy-card">
-            <h3>Build & Ship</h3>
+            <h3>AI-Integrated Systems</h3>
             <p>
-              I create applications end-to-end: UI → API → Database → AWS
-              deployment. No theory-only projects — everything runs live.
+              Applications that combine LLM APIs, structured prompts,
+              RAG pipelines, and tool-based workflows with real-world
+              backend systems.
             </p>
           </div>
 
           <div className="philosophy-card">
-            <h3>Problem-Solver</h3>
+            <h3>Scalable Cloud Architecture</h3>
             <p>
-              I don’t guess. I test, debug, measure, and fix. If a feature fails
-              in production, I track why — not just patch it.
+              Cloud-native deployments using AWS EC2, Lambda, S3,
+              API Gateway, and DynamoDB — designed for performance,
+              security, and long-term maintainability.
             </p>
           </div>
 
           <div className="philosophy-card">
-            <h3>Learning Loop</h3>
+            <h3>Production-Ready Engineering</h3>
             <p>
-              Every project pushes me one level up — from build scripts to auth
-              flows, deployment, optimization, and monitoring.
+              Structured APIs, authentication flows, validation layers,
+              logging, and deployment pipelines — built for reliability,
+              not just functionality.
             </p>
           </div>
+
         </div>
       </section>
 
-      {/* Beyond Code */}
+      {/* Engineering Mindset */}
       <section className="about-section">
-        <h2 className="section-title">Outside of Code</h2>
+        <h2 className="section-title">Engineering Mindset</h2>
         <p>
-          When I’m not building, I refuel through fitness, reading, and travel —
-          habits that keep my mind sharp and help me return to problems with a
-          fresh perspective.
+          I believe AI systems should be treated as software systems —
+          with architecture, evaluation layers, monitoring, and failure
+          handling built in from the start.
         </p>
-        <div className="interest-icons">
-          <span>🏋️ Fitness</span>
-          <span>📚 Reading</span>
-          <span>✈️ Travel</span>
-        </div>
+        <p>
+          The goal is simple: build systems that execute reliably,
+          scale efficiently, and deliver measurable impact.
+        </p>
       </section>
 
     </div>
