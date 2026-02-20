@@ -1,173 +1,162 @@
-/* Container */
+/* ================= CONTACT SECTION ================= */
+
 .contact-section {
-  padding: 6rem 1rem 3rem; /* TOP FIX APPLIED */
-  background: #f9f9f9;
+  padding: 5rem 2rem;
+  background: #f8fafc;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
 .contact-section h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  color: #0f172a;
+  letter-spacing: -0.5px;
 }
 
-/* Card */
+/* ================= CARD ================= */
+
 .contact-container {
-  display: flex;
-  justify-content: center;
   width: 100%;
+  max-width: 900px;
 }
 
 .contact-info {
-  width: 100%;
-  max-width: 650px;
-  background: #fff;
-  padding: 2.2rem;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
   text-align: center;
 }
 
 .contact-info h3 {
-  font-size: 1.9rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 700;
   margin-bottom: 1.2rem;
+  color: #0f172a;
 }
 
-/* Text */
-.contact-purpose {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-  text-align: center;
+/* ================= TEXT ================= */
+
+.lead-intro {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #334155;
+  margin-bottom: 1.8rem;
 }
 
 .contact-details p {
-  margin: 10px 0;
+  margin: 0.6rem 0;
   font-size: 1rem;
   display: flex;
   justify-content: center;
-  gap: 0.4rem;
+  gap: 0.6rem;
+  color: #475569;
 }
 
 .contact-info i {
-  color: #0066ff;
+  color: #2563eb;
 }
 
-/* CTA */
 .cta-line {
-  margin: 1.3rem 0 1rem;
+  margin: 1.8rem 0 1.2rem;
   font-weight: 500;
-  color: #0056d6;
+  color: #2563eb;
 }
 
-.email-cta {
-  margin: 1.4rem 0;
+/* ================= BUTTONS ================= */
+
+.contact-options {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
 }
 
-.email-button {
-  background: #007bff;
-  color: white;
-  padding: 10px 22px;
+.contact-options .btn {
+  padding: 12px 26px;
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
-  display: inline-block;
-  transition: 0.2s;
+  transition: all 0.25s ease;
 }
 
-.email-button:hover {
-  background: #0056d6;
+/* WhatsApp */
+.whatsapp-btn {
+  background: #25d366;
+  color: #ffffff;
+  box-shadow: 0 8px 18px rgba(37, 211, 102, 0.25);
 }
 
-/* Social */
+.whatsapp-btn:hover {
+  transform: translateY(-2px);
+  background: #1ebc5c;
+}
+
+/* Email */
+.email-btn {
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  background: transparent;
+}
+
+.email-btn:hover {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* ================= SOCIAL ================= */
+
 .connect-text {
-  margin-top: 1.2rem;
+  margin-top: 1.5rem;
   font-weight: 600;
+  color: #334155;
 }
 
 .social-icons {
-  margin-top: 0.6rem;
+  margin-top: 0.8rem;
   display: flex;
   justify-content: center;
-  gap: 1.3rem;
+  gap: 1.5rem;
 }
 
 .social-icons i {
   font-size: 1.8rem;
-  color: #333;
-  transition: 0.2s;
+  color: #334155;
+  transition: all 0.25s ease;
 }
 
 .social-icons i:hover {
-  color: #007bff;
-  transform: scale(1.15);
+  color: #2563eb;
+  transform: translateY(-3px);
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  .contact-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+
   .contact-info {
-    padding: 1.5rem;
+    padding: 2rem;
   }
-  .contact-info h3 {
-    font-size: 1.6rem;
-  }
-}
-/* ================= NEW ADDITIONS ================= */
 
-/* Lead intro message */
-.lead-intro {
-  font-size: 1.1rem;
-  margin-bottom: 1.3rem;
-  line-height: 1.6;
-  color: #333;
-  text-align: center;
-}
-
-/* CTA buttons: WhatsApp + Email */
-.contact-options {
-  margin: 1.8rem 0;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.whatsapp-btn {
-  background: #25D366;
-  color: #fff;
-}
-.whatsapp-btn:hover {
-  background: #1da851;
-}
-
-.email-btn {
-  background: #f9f9f9;
-  border: 2px solid #007bff;
-  color: #007bff;
-}
-.email-btn:hover {
-  background: #e8f2ff;
-}
-
-/* Responsive Fix */
-@media (max-width: 600px) {
   .contact-options {
-    justify-content: center;
-     width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .whatsapp-btn,
-  .email-btn {
+  .contact-options .btn {
     width: 90%;
-    max-width: 330px;
-    margin: 0.6rem auto;
-    padding: 12px 0;
-    border-radius: 10px;
-    font-size: 1rem;
-    display: block;
-   font-weight: 600;
+    max-width: 320px;
   }
 }
