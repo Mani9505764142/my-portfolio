@@ -2,72 +2,85 @@ import React from 'react';
 import './Skills.css';
 
 const Skills = () => {
+
   const skillCategories = [
+
     {
-      category: 'Programming Languages',
+      category: 'AI Engineering',
       skills: [
-        { name: 'JavaScript (ES6+)', icon: 'fab fa-js' },
-        { name: 'Python', icon: 'fab fa-python' },
-        { name: 'Java', icon: 'fab fa-java' },
+        { name: 'LLM Integration', icon: 'fas fa-brain' },
+        { name: 'RAG (Retrieval-Augmented Generation)', icon: 'fas fa-search' },
+        { name: 'LangChain Orchestration', icon: 'fas fa-project-diagram' },
+        { name: 'Agentic Workflows', icon: 'fas fa-robot' },
+        { name: 'Prompt Engineering', icon: 'fas fa-comment-dots' },
+        { name: 'AI System Evaluation', icon: 'fas fa-check-circle' },
       ],
     },
+
     {
-      category: 'Frontend Development',
+      category: 'Frontend Engineering',
       skills: [
         { name: 'React.js', icon: 'fab fa-react' },
+        { name: 'Next.js', icon: 'fas fa-layer-group' },
         { name: 'HTML5', icon: 'fab fa-html5' },
-        { name: 'CSS3', icon: 'fab fa-css3-alt' },
-        { name: 'Bootstrap', icon: 'fab fa-bootstrap' },
+        { name: 'CSS3 / Tailwind', icon: 'fab fa-css3-alt' },
       ],
     },
+
     {
-      category: 'Backend & APIs',
+      category: 'Backend & API Architecture',
       skills: [
         { name: 'Node.js', icon: 'fab fa-node' },
         { name: 'Express.js', icon: 'fas fa-code' },
         { name: 'REST API Design', icon: 'fas fa-network-wired' },
-        { name: 'JSON & Postman (Testing)', icon: 'fas fa-paper-plane' },
+        { name: 'JWT Authentication', icon: 'fas fa-shield-alt' },
+        { name: 'Microservices Design', icon: 'fas fa-cubes' },
       ],
     },
+
+    {
+      category: 'Cloud & Infrastructure (AWS)',
+      skills: [
+        { name: 'EC2 (Compute Layer)', icon: 'fas fa-server' },
+        { name: 'Lambda (Serverless)', icon: 'fas fa-bolt' },
+        { name: 'S3 (Storage)', icon: 'fas fa-box' },
+        { name: 'API Gateway', icon: 'fas fa-plug' },
+        { name: 'DynamoDB', icon: 'fas fa-table' },
+        { name: 'RDS', icon: 'fas fa-database' },
+        { name: 'IAM & Security Policies', icon: 'fas fa-user-shield' },
+        { name: 'CloudWatch (Monitoring)', icon: 'fas fa-chart-line' },
+      ],
+    },
+
     {
       category: 'Databases',
       skills: [
         { name: 'MongoDB', icon: 'fas fa-leaf' },
         { name: 'MySQL', icon: 'fas fa-database' },
-        { name: 'PostgreSQL', icon: 'fas fa-database' }, // added
+        { name: 'PostgreSQL', icon: 'fas fa-database' },
       ],
     },
+
     {
-      category: 'AWS & Cloud Integrations',
-      skills: [
-        { name: 'EC2 (Server Deployment)', icon: 'fas fa-server' }, // added
-        { name: 'S3 (Static Hosting & Storage)', icon: 'fas fa-box' },
-        { name: 'API Gateway', icon: 'fas fa-plug' },
-        { name: 'IAM Roles & Policies', icon: 'fas fa-user-shield' }, // added
-        { name: 'Lambda (Serverless Functions)', icon: 'fas fa-terminal' },
-        { name: 'DynamoDB', icon: 'fas fa-table' },
-        { name: 'SES (Email Service)', icon: 'fas fa-envelope' },
-        { name: 'CloudWatch (Monitoring)', icon: 'fas fa-chart-line' },
-      ],
-    },
-    {
-      category: 'Tools & Other Skills',
+      category: 'DevOps & Tools',
       skills: [
         { name: 'Git & GitHub', icon: 'fab fa-git-alt' },
-        { name: 'Figma (UI/UX Prototyping)', icon: 'fab fa-figma' },
-        { name: 'VS Code', icon: 'fas fa-code-branch' },
-        { name: 'Linux Basics', icon: 'fas fa-terminal' },
+        { name: 'Docker', icon: 'fab fa-docker' },
+        { name: 'CI/CD Pipelines', icon: 'fas fa-sync-alt' },
+        { name: 'Linux Environment', icon: 'fas fa-terminal' },
       ],
     },
   ];
 
   return (
     <section className="skills-section">
-      <h2>My Skills</h2>
+      <h2>Technical Expertise</h2>
+
       <div className="skills-container">
         {skillCategories.map((category, index) => (
           <div key={index} className="skills-card">
             <h3>{category.category}</h3>
+
             <div className="skills-grid">
               {category.skills.map((skill, skillIndex) => (
                 <div key={skillIndex} className="skill-item">
@@ -76,6 +89,7 @@ const Skills = () => {
                 </div>
               ))}
             </div>
+
           </div>
         ))}
       </div>
