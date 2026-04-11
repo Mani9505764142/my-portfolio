@@ -1,40 +1,151 @@
+/* ================= SEO PAGE ================= */
+
 .seo-page {
+  background: #020617;
+  color: #e2e8f0;
+  padding: 80px 20px;
+}
+
+.seo-container {
   max-width: 900px;
   margin: auto;
-  padding: 3rem 1rem;
-  line-height: 1.7;
-  background: #fff;
-  font-size: 1.08rem;
 }
 
-.seo-page h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-}
+/* ================= HERO ================= */
 
-.seo-page h2 {
-  margin-top: 2rem;
-  font-size: 1.4rem;
-  color: #0056d6;
-}
-
-.whatsapp-hire, .email-hire {
-  display: block;
-  margin: 1rem auto;
-  padding: 10px 15px;
-  width: 90%;
-  max-width: 350px;
-  border-radius: 8px;
+.seo-hero {
   text-align: center;
-  font-weight: 600;
+  margin-bottom: 50px;
 }
 
-.whatsapp-hire {
-  background: #25D366;
-  color: white;
+.seo-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+
+  background: linear-gradient(90deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  color: transparent;
 }
-.email-hire {
-  background: #007bff;
+
+.seo-intro {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #cbd5f5;
+  line-height: 1.7;
+}
+
+/* ================= BUTTONS ================= */
+
+.seo-cta-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Primary */
+.btn-primary {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
   color: white;
+  box-shadow: 0 5px 20px rgba(59, 130, 246, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.5);
+}
+
+/* Secondary */
+.btn-secondary {
+  border: 2px solid #6366f1;
+  color: #6366f1;
+}
+
+.btn-secondary:hover {
+  background: #6366f1;
+  color: #020617;
+}
+
+/* ================= CONTENT ================= */
+
+.seo-content {
+  margin-top: 40px;
+}
+
+.seo-content h2 {
+  margin-top: 30px;
+  font-size: 1.4rem;
+  color: #60a5fa;
+}
+
+.seo-content ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.seo-content li {
+  margin-bottom: 8px;
+  color: #cbd5f5;
+}
+
+/* ================= LINKS ================= */
+
+.seo-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.seo-link:hover {
+  text-decoration: underline;
+}
+
+/* ================= FINAL CTA ================= */
+
+.seo-final-cta {
+  margin-top: 60px;
+  padding: 40px;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.seo-final-cta h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #f8fafc;
+}
+
+.seo-final-cta p {
+  color: #cbd5f5;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .seo-hero h1 {
+    font-size: 2rem;
+  }
+
+  .seo-intro {
+    font-size: 1rem;
+  }
+
+  .seo-final-cta {
+    padding: 25px;
+  }
 }

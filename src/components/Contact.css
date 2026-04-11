@@ -1,173 +1,166 @@
-/* Container */
+/* ================= CONTACT SECTION ================= */
+
 .contact-section {
-  padding: 6rem 1rem 3rem; /* TOP FIX APPLIED */
-  background: #f9f9f9;
+  padding: 5rem 2rem;
+  background: #020617;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
+/* TITLE */
 .contact-section h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+
+  background: linear-gradient(90deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
-/* Card */
-.contact-container {
+/* ================= CONTAINER ================= */
+
+.contact-container.single {
+  width: 100%;
   display: flex;
   justify-content: center;
+}
+
+/* ================= CARD ================= */
+
+.contact-card {
   width: 100%;
+  max-width: 700px;
+
+  background: rgba(15, 23, 42, 0.75);
+  padding: 3rem;
+  border-radius: 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  text-align: left;
 }
 
-.contact-info {
-  width: 100%;
-  max-width: 650px;
-  background: #fff;
-  padding: 2.2rem;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
-  text-align: center;
+/* HEADINGS */
+
+.contact-card h3 {
+  font-size: 1.8rem;
+  color: #f8fafc;
 }
 
-.contact-info h3 {
-  font-size: 1.9rem;
-  font-weight: 600;
-  margin-bottom: 1.2rem;
-}
+/* ================= TEXT ================= */
 
-/* Text */
-.contact-purpose {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-  text-align: center;
+.lead-intro {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #cbd5f5;
 }
 
 .contact-details p {
-  margin: 10px 0;
-  font-size: 1rem;
   display: flex;
-  justify-content: center;
-  gap: 0.4rem;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  color: #94a3b8;
 }
 
-.contact-info i {
-  color: #0066ff;
+.contact-details i {
+  color: #818cf8;
 }
 
-/* CTA */
 .cta-line {
-  margin: 1.3rem 0 1rem;
+  margin-top: 0.8rem;
   font-weight: 500;
-  color: #0056d6;
+  color: #60a5fa;
 }
 
-.email-cta {
-  margin: 1.4rem 0;
-}
+/* ================= BUTTONS ================= */
 
-.email-button {
-  background: #007bff;
-  color: white;
-  padding: 10px 22px;
-  border-radius: 8px;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  transition: 0.2s;
-}
-
-.email-button:hover {
-  background: #0056d6;
-}
-
-/* Social */
-.connect-text {
-  margin-top: 1.2rem;
-  font-weight: 600;
-}
-
-.social-icons {
-  margin-top: 0.6rem;
+.contact-actions {
+  margin-top: 1.5rem;
   display: flex;
-  justify-content: center;
-  gap: 1.3rem;
-}
-
-.social-icons i {
-  font-size: 1.8rem;
-  color: #333;
-  transition: 0.2s;
-}
-
-.social-icons i:hover {
-  color: #007bff;
-  transform: scale(1.15);
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .contact-info {
-    padding: 1.5rem;
-  }
-  .contact-info h3 {
-    font-size: 1.6rem;
-  }
-}
-/* ================= NEW ADDITIONS ================= */
-
-/* Lead intro message */
-.lead-intro {
-  font-size: 1.1rem;
-  margin-bottom: 1.3rem;
-  line-height: 1.6;
-  color: #333;
-  text-align: center;
-}
-
-/* CTA buttons: WhatsApp + Email */
-.contact-options {
-  margin: 1.8rem 0;
-  display: flex;
-  justify-content: center;
   gap: 1rem;
 }
 
-.whatsapp-btn {
-  background: #25D366;
-  color: #fff;
-}
-.whatsapp-btn:hover {
-  background: #1da851;
+/* WhatsApp */
+.primary-btn {
+  background: #25d366;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+  transition: 0.3s;
 }
 
-.email-btn {
-  background: #f9f9f9;
-  border: 2px solid #007bff;
-  color: #007bff;
-}
-.email-btn:hover {
-  background: #e8f2ff;
+.primary-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(37, 211, 102, 0.5);
 }
 
-/* Responsive Fix */
-@media (max-width: 600px) {
-  .contact-options {
-    justify-content: center;
-     width: 100%;
+/* Email */
+.secondary-btn {
+  border: 2px solid #818cf8;
+  color: #818cf8;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.secondary-btn:hover {
+  background: #818cf8;
+  color: #020617;
+  transform: translateY(-3px);
+}
+
+/* ================= SOCIAL ================= */
+
+.connect-text {
+  margin-top: 1.5rem;
+  color: #cbd5f5;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.social-icons i {
+  font-size: 1.6rem;
+  color: #94a3b8;
+  transition: 0.3s;
+}
+
+.social-icons i:hover {
+  color: #818cf8;
+  transform: translateY(-4px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 2rem;
+    text-align: center;
   }
 
-  .whatsapp-btn,
-  .email-btn {
-    width: 90%;
-    max-width: 330px;
-    margin: 0.6rem auto;
-    padding: 12px 0;
-    border-radius: 10px;
-    font-size: 1rem;
-    display: block;
-   font-weight: 600;
+  .contact-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-details p {
+    justify-content: center;
   }
 }

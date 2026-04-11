@@ -1,85 +1,116 @@
 import React from "react";
-import profileImage from "../assets/profile.jpg";
+import { motion, useScroll, useTransform } from "framer-motion";
+
 import "./About.css";
 
+import devImage from "../assets/dev.jpg";
+import cloudImage from "../assets/cloud.jpg";
+import aiImage from "../assets/ai.jpg";
+
+// 🔹 Animations
+const fadeLeft = {
+  hidden: { opacity: 0, x: -80 },
+  show: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+};
+
+const fadeRight = {
+  hidden: { opacity: 0, x: 80 },
+  show: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+};
+
 const About = () => {
+  // 🔥 Scroll-based parallax
+  const { scrollY } = useScroll();
+  const bgY = useTransform(scrollY, [0, 800], [0, -120]);
+
   return (
-    <div className="about-me-container">
+    <div className="about-container">
 
-      {/* Hero */}
-      <section className="about-hero">
-        <img
-          src={profileImage}
-          alt="Sai Manikanta Vivek"
-          className="hero-profile-image"
+      {/* ===== SECTION 1 ===== */}
+      <section className="about-section cinematic">
+        <motion.div
+          className="about-image"
+          variants={fadeLeft}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
+          <img src={devImage} alt="Developer" />
+        </motion.div>
+
+        <motion.div
+          className="about-text"
+          variants={fadeRight}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
+          <h2>Who I Am</h2>
+          <p>
+            I’m Sai Manikanta Vivek Suthari — an AI-focused Full Stack Engineer building scalable web and AI-powered systems using MERN Stack and AWS. I design end-to-end architectures that connect clean frontend interfaces with secure backend APIs and cloud infrastructure.
+          </p>
+          <p>
+            My work increasingly focuses on integrating LLM-based systems, Retrieval-Augmented Generation (RAG), and agentic workflows into production-ready applications. I approach AI not as a demo feature, but as an engineered system that must be reliable, observable, and scalable.
+          </p>
+        </motion.div>
+      </section>
+
+      {/* ===== SECTION 2 ===== */}
+      <section className="about-section cinematic reverse">
+        <motion.div
+          className="about-image"
+          variants={fadeRight}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
+          <img src={cloudImage} alt="Cloud Systems" />
+        </motion.div>
+
+        <motion.div
+          className="about-text"
+          variants={fadeLeft}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
+          <h2>What I Do</h2>
+          <p>
+            I build production-ready systems using React, Node.js, and AWS.
+            From APIs to deployment, everything is designed for scale.
+          </p>
+        </motion.div>
+      </section>
+
+      {/* ===== SECTION 3 (AI - CINEMATIC) ===== */}
+      <section className="ai-section">
+
+        {/* 🔥 Background with parallax */}
+        <motion.img
+          src={aiImage}
+          alt="AI Systems"
+          className="ai-bg"
+          style={{ y: bgY }}
         />
-        <h1>About Me</h1>
-        <p className="hero-subtitle">
-          Full Stack Developer (MERN) • AWS Integrations • Cloud-Backed Apps
-        </p>
-      </section>
 
-      {/* Who I Am */}
-      <section className="about-section">
-        <h2 className="section-title">Who I Am</h2>
-        <p>
-          I’m Sai Manikanta Vivek Suthari — a Full Stack Developer who builds
-          **scalable web applications** with **React, Node.js, and AWS
-          integrations**. I work on both frontend and backend, designing
-          UI/UX-driven interfaces and connecting them with secure, cloud-backed
-          APIs.
-        </p>
-        <p>
-          My strength is bridging development and cloud: deploying apps on AWS,
-          integrating services like **EC2, Lambda, S3, SES, API Gateway, IAM**,
-          and designing workflows that can scale without firefighting.
-        </p>
-      </section>
+        {/* 🔥 Overlay (for readability + cinematic feel) */}
+        <div className="ai-overlay"></div>
 
-      {/* What I Do */}
-      <section className="about-section">
-        <h2 className="section-title">What I Do</h2>
+        {/* 🔥 Content (LEFT aligned, animated) */}
+        <motion.div
+          className="ai-content"
+          initial={{ opacity: 0, x: -80 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h1>AI Automation & RAG Systems</h1>
+          <p>
+            I build AI-powered systems using LangChain, Ollama, and n8n —
+            from intelligent chatbots to production-ready RAG pipelines.
+          </p>
+        </motion.div>
 
-        <div className="philosophy-grid">
-          <div className="philosophy-card">
-            <h3>Build & Ship</h3>
-            <p>
-              I create applications end-to-end: UI → API → Database → AWS
-              deployment. No theory-only projects — everything runs live.
-            </p>
-          </div>
-
-          <div className="philosophy-card">
-            <h3>Problem-Solver</h3>
-            <p>
-              I don’t guess. I test, debug, measure, and fix. If a feature fails
-              in production, I track why — not just patch it.
-            </p>
-          </div>
-
-          <div className="philosophy-card">
-            <h3>Learning Loop</h3>
-            <p>
-              Every project pushes me one level up — from build scripts to auth
-              flows, deployment, optimization, and monitoring.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Beyond Code */}
-      <section className="about-section">
-        <h2 className="section-title">Outside of Code</h2>
-        <p>
-          When I’m not building, I refuel through fitness, reading, and travel —
-          habits that keep my mind sharp and help me return to problems with a
-          fresh perspective.
-        </p>
-        <div className="interest-icons">
-          <span>🏋️ Fitness</span>
-          <span>📚 Reading</span>
-          <span>✈️ Travel</span>
-        </div>
       </section>
 
     </div>

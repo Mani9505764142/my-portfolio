@@ -1,63 +1,103 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./Contact.css";
 
 const Contact = () => {
   return (
     <section id="contact" className="contact-section">
 
-      <h2>Get In Touch</h2>
+      {/* 🔥 TITLE */}
+      <motion.h2
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
+      >
+        Let’s Build Something Meaningful
+      </motion.h2>
 
-      <div className="contact-container">
-        <div className="contact-info">
+      <div className="contact-container single">
 
-          <h3>Let’s Work Together</h3>
+        <motion.div
+          className="contact-card"
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <h3>Open to Opportunities</h3>
 
-          {/* Lead Intent Statement */}
           <p className="lead-intro">
-            I help businesses and founders build <strong>MERN applications</strong>,
-            deploy <strong>AWS cloud infrastructure</strong>, and automate workflows.
-            Open to <strong>freelance projects</strong>, <strong>remote roles</strong>,
-            and <strong>full-time opportunities</strong>.
+            I work on AI-integrated systems, scalable MERN applications, and 
+            AWS cloud architectures (EC2 & Serverless). 
+            Open to full-time roles, remote opportunities, and high-impact projects 
+            where engineering depth and execution matter.
           </p>
 
           <div className="contact-details">
-            <p><i className="fas fa-envelope"></i><strong>Email:</strong> manikanta.suthari2002@gmail.com</p>
-            <p><i className="fas fa-phone"></i><strong>Phone:</strong> +91 95057 64142</p>
-            <p><i className="fas fa-map-marker-alt"></i><strong>Location:</strong> Hyderabad, India</p>
+            <p>
+              <i className="fas fa-envelope"></i>
+              <strong>Email:</strong> manikanta.suthari2002@gmail.com
+            </p>
+
+            <p>
+              <i className="fas fa-phone"></i>
+              <strong>Phone:</strong> +91 95057 64142
+            </p>
+
+            <p>
+              <i className="fas fa-map-marker-alt"></i>
+              <strong>Location:</strong> Hyderabad, India
+            </p>
           </div>
 
           <p className="cta-line">
-            ⚡ I reply within <strong>1–3 hours</strong> (WhatsApp is faster).
+            Available for discussions around AI systems, cloud architecture, and full-stack engineering.
           </p>
 
-          {/* 🚀 Conversion Buttons */}
-          <div className="contact-options">
+          {/* 🔥 ACTION BUTTONS */}
+          <div className="contact-actions">
 
             <a
-              href="https://wa.me/919505764142?text=Hi%20Sai%20Manikanta,%20I%20visited%20your%20portfolio.%20I%20want%20to%20discuss%20a%20project."
+              href="https://wa.me/919505764142?text=Hi%20Sai,%20I%20went%20through%20your%20portfolio.%20Let’s%20discuss%20an%20opportunity."
               target="_blank"
               rel="noreferrer"
-              className="btn whatsapp-btn"
+              className="primary-btn"
             >
-              💬 WhatsApp Me
+              💬 WhatsApp
             </a>
 
             <a
-              href="mailto:manikanta.suthari2002@gmail.com?subject=Project%20Inquiry%20From%20Portfolio&body=Hi%20Sai%20Manikanta,%20I%20want%20to%20discuss%20a%20project%20regarding..."
-              className="btn email-btn"
+              href="mailto:manikanta.suthari2002@gmail.com?subject=Opportunity%20Discussion&body=Hi%20Sai,%20I%20would%20like%20to%20connect%20regarding..."
+              className="secondary-btn"
             >
-              📩 Email Me
+              📩 Email
             </a>
 
           </div>
 
-          <h4 className="connect-text">Connect With Me</h4>
+          <h4 className="connect-text">Connect</h4>
+
           <div className="social-icons">
-            <a href="https://www.linkedin.com/in/sai-manikanta-vivek-suthari-467001232" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
-            <a href="https://github.com/Mani9505764142" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
+            <a 
+              href="https://www.linkedin.com/in/sai-manikanta-vivek-suthari-467001232" 
+              target="_blank" 
+              rel="noreferrer"
+            >
+              <i className="fab fa-linkedin"></i>
+            </a>
+
+            <a 
+              href="https://github.com/Mani9505764142" 
+              target="_blank" 
+              rel="noreferrer"
+            >
+              <i className="fab fa-github"></i>
+            </a>
           </div>
 
-        </div>
+        </motion.div>
+
       </div>
     </section>
   );

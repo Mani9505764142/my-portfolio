@@ -1,159 +1,182 @@
-/* About.css */
-.about-me-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 2rem 4rem;
-  font-family: 'Poppins', sans-serif;
-  color: #2d3748;
+/* ===== BASE ===== */
+.about-container {
+  background: #0b0f19;
+  color: white;
 }
 
-/* Hero Section */
-.about-hero {
-  background: #ffffff;
-  padding: 3rem 1rem 2rem;
-  text-align: center;
-}
-
-.hero-content {
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.hero-profile-image {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  margin-bottom: 2rem;
-}
-
-.about-hero h1 {
-  font-size: 2.4rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #0f172a;
-}
-
-
-.hero-subtitle {
-  font-size: 1.1rem;
-  color: #334155;
-  font-weight: 500;
-}
-
-/* Main Content */
-.about-content {
-  padding-top: 1rem;
-}
-
-/* Section Styling */
+/* ===== GENERAL SECTION ===== */
 .about-section {
-  margin-bottom: 3rem;
-  background: white;
-  padding: 2.5rem;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-}
-
-.section-title {
-  font-size: 1.8rem;
-  color: #1e40af;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 3px solid #e2e8f0;
-}
-
-.section-content {
-  line-height: 1.8;
-  font-size: 1.1rem;
-}
-
-.section-content p {
-  margin-bottom: 1.5rem;
-}
-
-/* Philosophy Grid */
-.philosophy-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.philosophy-card {
-  background: #f8fafc;
-  padding: 1.8rem;
-  border-radius: 10px;
-  border-left: 4px solid #1e40af;
-  transition: transform 0.3s ease;
-}
-
-.philosophy-card:hover {
-  transform: translateY(-5px);
-}
-
-.philosophy-card h3 {
-  color: #1e293b;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
-}
-
-/* Interests Section */
-.interests-content {
-  line-height: 1.8;
-  font-size: 1.1rem;
-}
-
-.interest-icons {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.interest-icons span {
-  background: #f1f5f9;
-  padding: 0.8rem 1.2rem;
-  border-radius: 50px;
-  font-size: 1rem;
-  display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: space-between;
+  padding: 120px 10%;
+  gap: 60px;
 }
 
-/* Responsive Design */
+.about-section.reverse {
+  flex-direction: row-reverse;
+}
+
+/* ===== IMAGE ===== */
+.about-image img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 16px;
+
+  transform: scale(1.08);
+  transition: transform 0.8s ease, filter 0.6s ease;
+
+  filter: brightness(0.9) contrast(1.1);
+}
+
+.about-image img:hover {
+  transform: scale(1.15);
+}
+
+/* ===== TEXT ===== */
+.about-text {
+  max-width: 520px;
+}
+
+.about-text h2 {
+  font-size: 2.6rem;
+  margin-bottom: 20px;
+
+  background: linear-gradient(90deg, #3b82f6, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-text p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #cbd5f5;
+}
+
+/* ===================================================== */
+/* ===== AI SECTION (CINEMATIC FINAL VERSION) ===== */
+/* ===================================================== */
+
+.ai-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* 🔥 Background */
+.ai-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transform: scale(1.1);
+  z-index: 0;
+
+  animation: zoomBg 20s ease-in-out infinite alternate;
+}
+
+@keyframes zoomBg {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+/* 🔥 Cinematic gradient (LEFT FOCUS) */
+.ai-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  background: linear-gradient(
+    to right,
+    rgba(5, 10, 20, 0.95) 20%,
+    rgba(5, 10, 20, 0.7) 45%,
+    rgba(5, 10, 20, 0.3) 70%,
+    transparent 100%
+  );
+}
+
+/* 🔥 Content (NO BLUR, LEFT ALIGNED) */
+.ai-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 600px;
+  margin-left: 8%;
+
+  padding: 0;
+  text-align: left;
+}
+
+/* 🔥 Heading */
+.ai-content h1 {
+  font-size: 3.2rem;
+  line-height: 1.2;
+
+  background: linear-gradient(90deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  color: transparent;
+
+  text-shadow:
+    0 0 20px rgba(99, 102, 241, 0.4),
+    0 0 40px rgba(99, 102, 241, 0.2);
+}
+
+/* 🔥 Paragraph */
+.ai-content p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #e2e8f0;
+  line-height: 1.7;
+}
+
+/* 🔥 Smooth transition to footer */
+.ai-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 3;
+
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #0b0f19
+  );
+}
+
+/* ===================================================== */
+/* ===== RESPONSIVE ===== */
+/* ===================================================== */
+
 @media (max-width: 768px) {
-  .about-me-container {
-    padding: 0 1.5rem 3rem;
-  }
-  
-  .about-hero {
-    padding: 4rem 1.5rem;
-  }
-  
-  .about-hero h1 {
-    font-size: 2.2rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.1rem;
-  }
-  
   .about-section {
-    padding: 1.8rem;
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .section-title {
-    font-size: 1.5rem;
+
+  .about-section.reverse {
+    flex-direction: column;
   }
-  
-  .philosophy-grid {
-    grid-template-columns: 1fr;
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .ai-content {
+    margin-left: 0;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .ai-content h1 {
+    font-size: 2.4rem;
   }
 }
