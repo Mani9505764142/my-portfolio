@@ -164,3 +164,77 @@
     justify-content: center;
   }
 }
+/* ================= FORM ================= */
+
+.contact-form {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* row for name + email */
+.contact-form .row {
+  display: flex;
+  gap: 12px;
+}
+
+.contact-form .row input {
+  flex: 1;
+}
+
+/* inputs + textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(2, 6, 23, 0.6);
+
+  color: #f8fafc;
+  font-size: 0.95rem;
+
+  outline: none;
+  transition: 0.25s ease;
+}
+
+/* placeholder */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #64748b;
+}
+
+/* focus effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid #818cf8;
+  box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.2);
+}
+
+/* textarea resize fix */
+.contact-form textarea {
+  resize: none;
+}
+
+/* submit button override (same theme, not WhatsApp green) */
+.contact-form .primary-btn {
+  background: linear-gradient(90deg, #60a5fa, #a78bfa);
+  box-shadow: 0 10px 25px rgba(129, 140, 248, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form .primary-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(129, 140, 248, 0.5);
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .contact-form .row {
+    flex-direction: column;
+  }
+}

@@ -1,12 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./Contact.css";
 
 const Contact = () => {
+
+  // 🔥 STATE
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: ""
+  });
+
+  // 🔥 NEW STATES (UX upgrade)
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  // 🔥 HANDLE INPUT
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  // 🔥 HANDLE SUBMIT (improved)
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (loading) return; // prevent double click
+
+    setLoading(true);
+    setSuccess(false);
+
+    try {
+      await fetch("https://overglaze-wynona-boringly.ngrok-free.dev/webhook/b831cf37-5df9-4c28-bd62-6b566782eb03", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
+
+      setSuccess(true);
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: ""
+      });
+
+    } catch (error) {
+      console.error(error);
+    }
+
+    setLoading(false);
+  };
+
   return (
     <section id="contact" className="contact-section">
 
-      {/* 🔥 TITLE */}
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -55,9 +109,62 @@ const Contact = () => {
             Available for discussions around AI systems, cloud architecture, and full-stack engineering.
           </p>
 
-          {/* 🔥 ACTION BUTTONS */}
-          <div className="contact-actions">
+          {/* 🔥 FORM */}
+          <form className="contact-form" onSubmit={handleSubmit}>
 
+            <div className="row">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+
+            <input
+              type="text"
+              name="phone"
+              placeholder="Your Phone Number"
+              value={formData.phone}
+              onChange={handleChange}
+              required
+            />
+
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="4"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            />
+
+            <button type="submit" className="primary-btn" disabled={loading}>
+              {loading ? "Sending..." : "🚀 Send Message"}
+            </button>
+
+            {/* ✅ SUCCESS MESSAGE */}
+            {success && (
+              <p style={{ color: "#22c55e", marginTop: "10px" }}>
+                ✅ Message sent successfully
+              </p>
+            )}
+
+          </form>
+
+          {/* ACTION BUTTONS */}
+          <div className="contact-actions">
             <a
               href="https://wa.me/919505764142?text=Hi%20Sai,%20I%20went%20through%20your%20portfolio.%20Let’s%20discuss%20an%20opportunity."
               target="_blank"
@@ -73,25 +180,16 @@ const Contact = () => {
             >
               📩 Email
             </a>
-
           </div>
 
           <h4 className="connect-text">Connect</h4>
 
           <div className="social-icons">
-            <a 
-              href="https://www.linkedin.com/in/sai-manikanta-vivek-suthari-467001232" 
-              target="_blank" 
-              rel="noreferrer"
-            >
+            <a href="https://www.linkedin.com/in/sai-manikanta-vivek-suthari-467001232" target="_blank" rel="noreferrer">
               <i className="fab fa-linkedin"></i>
             </a>
 
-            <a 
-              href="https://github.com/Mani9505764142" 
-              target="_blank" 
-              rel="noreferrer"
-            >
+            <a href="https://github.com/Mani9505764142" target="_blank" rel="noreferrer">
               <i className="fab fa-github"></i>
             </a>
           </div>
